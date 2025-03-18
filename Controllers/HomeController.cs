@@ -22,7 +22,7 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         using var conn = _dbconnection.GetConnection();
-        using var cmd = new NpgsqlCommand("select a.nome a.email from usuario a",conn);
+        using var cmd = new NpgsqlCommand("select a.nome,a.email from usuario a",conn);
         using var read = cmd.ExecuteReader();
         
         return View();

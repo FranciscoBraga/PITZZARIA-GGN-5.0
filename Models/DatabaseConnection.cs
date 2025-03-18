@@ -11,7 +11,6 @@ public class DatabaseConnection{
 #pragma warning disable CS8601// possible null reference assignment
 
 _connectionString = configuration.GetConnectionString("Defaultconnection");
-
 #pragma warning restore CS8601//possible null reference assignment
     }
 
