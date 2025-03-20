@@ -4,7 +4,7 @@ namespace pizzariaggn.models;
 
 public class Usuario {
 
-public int id {get; set;}
+public int Id {get; set;}
 
 public  string? Nome {get; set;}
 
